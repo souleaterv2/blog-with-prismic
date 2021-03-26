@@ -1,1 +1,65 @@
-// TODO
+.container {
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  > span {
+    color: var(--pink-500);
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
+
+.post {
+  color: var(--gray-200);
+  a {
+    display: block;
+    margin-bottom: 2rem;
+
+    &:hover h1 {
+      color: var(--pink-500);
+    }
+  }
+
+  h1 {
+    color: var(--gray-100);
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0.45rem;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    span:first-child {
+      margin-right: 1rem;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 1rem;
+        font-weight: 400;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.hiddeButton {
+  display: none;  
+}
